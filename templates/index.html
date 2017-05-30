@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Youtube Downloader</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+	<link rel="stylesheet" type="text/css" href="./static/styles/main.css">
 </head>
 <body>
 	<h1>Youtube Downloader</h1>
@@ -12,6 +13,10 @@
 		<input type="text" name="url">
 		<button type="submit">送出</button>
 	</form>
-	
+	{% if filename %}
+	<span>
+		{{ filename }}下載完成！
+	</span>
+	{% endif %}
 </body>
 </html>
